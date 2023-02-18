@@ -1,0 +1,96 @@
+
+nav {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100vh;
+    border: 1px;
+    padding: 1px;
+    text-align: center;
+    background-color: rgb(46, 42, 42);
+    transform: translateY(-100%);
+    transition: transform 0.1s ease;
+  
+  }
+  
+  nav:target {
+  
+    transform: translateY(0);
+  
+  }
+  
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  nav > ul a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    display: block;
+  }
+  
+  nav > ul a:hover {
+    background-color: rgb(146, 130, 36); 
+  }
+  
+  .twitter-social a:hover{
+            color: blue
+  }
+  h3{
+    background-color:rgb(196, 178, 80) ;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 10px;
+    display: inline-block;
+    width: 50%;
+  }
+  .msneely img{
+    border-style: solid;
+    border-width: 3px;
+    border-color: pink;
+  }
+  .msneely{
+    align-items: center;
+    text-align: center;
+  }
+.close{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+  @media screen and (min-width: 700px) {
+    nav {
+      position: static;
+      height: 50px;
+      transform: translateY(0);
+      width: 100%;
+    }
+    .hamburger,
+    .close {
+     display: none;
+    }
+    nav li {
+      display: inline-block;
+    }
+    .twitter{
+        position: absolute;
+        left: 0;
+        top:0;
+        background-color: rgb(146, 130, 36);
+    }
+
+    nav li:first-child{
+        background-color: rgb(146, 130, 36); 
+      }
+  }
